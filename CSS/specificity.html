@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity rules in CSS</title>
+    <style>
+        .yellow {
+            color: yellow;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .purple {
+            color: purple;
+        }
+
+        /* this is an example of attribute selector */
+        [data-x=a] {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow red purple" data-x="a">CSS specificity</h1>
+    </div>
+    <div>
+        <ol>
+            <li>universal selector=0</li>
+            <li>element selector=1</li>
+            <li>class selector or pseudo or attribute selector=10</li>
+            <li>id selectors=100</li>
+            <li>inline styles=1000</li>
+            <li>!important marked=10000</li>
+        </ol>
+        <p>if selectors of same specificity are there, then the selector who will be written later will be applied. To calculate specificity, add them.</p>
+    </div>
+
+</body>
+
+</html>

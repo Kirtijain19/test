@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outlines and shadows in CSS</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            padding: 34px;
+            /* box-shadow: h-offset v-offset blur spread color inset; */
+            box-shadow: 5px 5px 15px 5px red;
+           
+        }
+        .text-element{
+            text-shadow: 2px 2px 4px goldenrod;
+            outline: 2px solid black;
+            outline-offset: 3px;
+            border: 2px solid green;
+            border-radius: 20px;
+            /* border andar hoga outline bahar hogi
+            border is a part of box-model whereas outline is not 
+            border radius se border curvy hoga accordingly outlines curvy hongi */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box
+    </div>
+    <p class="text-element">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda architecto commodi pariatur quidem nobis amet ipsam earum autem, quam incidunt ullam labore adipisci!
+    </p>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            position: sticky;
+            top: 0px;
+            /* margin: 0;
+            padding: 0; */
+            background-color: palevioletred;
+            height: 50px;
+        }
+
+        nav span {
+            padding: 10px;
+            font-size: 25px;
+        }
+
+        .boxes {
+            height: 80vh;
+            background-color: green;
+            display: flex;
+            margin: 12px 34px;
+
+            align-items: center;
+        }
+
+        .box1 {
+            height: 60vh;
+            background-color: orange;
+            width: 35vw;
+            margin-left: 10vw;
+            margin-right: 10vw;
+        }
+
+        .box2 {
+            height: 60vh;
+            background-color: blueviolet;
+            width: 35vw;
+        }
+
+        .message {
+            height: 40vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box3 {
+            background-color: burlywood;
+            height: 20vh;
+            border: 2px solid brown;
+            border-radius: 17px;
+            width: 80vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box3 p {
+            text-align: center;
+            font-size: 40px;
+
+        }
+
+        .footer {
+            background-color: white;
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .footer p {
+            font-size: 25px;
+        }
+
+        img {
+            position: fixed;
+            bottom: 10px;
+            right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <span>Home</span>
+                <span>About</span>
+                <span>Contact Us</span>
+            </nav>
+        </header>
+        <main>
+            <div class="boxes">
+                <div class="box box1"></div>
+                <div class="box box2"></div>
+            </div>
+            <div class="message">
+                <div class="image">
+                    <img src="https://th.bing.com/th/id/R.84a5020050cbfee362ee868704b6d035?rik=3VmtVTUtOB2Umg&riu=http%3a%2f%2fcliparts.co%2fcliparts%2fpTo%2fAg9%2fpToAg99nc.png&ehk=y1Ql4jMoLiOIGlD457TtOiXIoQO6DcOzTY9YycD0Nmw%3d&risl=&pid=ImgRaw&r=0"
+                        height="50px" alt="">
+                        
+                </div>
+                <div class="box3">
+                    <p>Welcome to Kirti Jain's website</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <p>Thank You</p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

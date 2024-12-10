@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* Element selector
+        div{
+            background-color: red;
+        } */
+
+        /* Class selector */
+        .red {
+            background-color: red;
+        }
+
+        /* ID selector */
+        #green {
+            background-color: green;
+        }
+
+        /* Child selector (div ke direct child pe apply hoga. agar div ke andar span h span ke andar para h uspe apply nhi hoga.) */
+        div>p {
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Descendent selector (agar div ke andar para khi bhi h direct or indirect then it will be applied) */
+        div p {
+            color: chartreuse;
+            background-color: brown;
+        }
+
+        /* Universal selector (it will be applied on all elements) */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo selectors */
+        a:visited {
+            color: yellow;
+        }
+
+        a:link {
+            color: darkmagenta;
+        }
+        /* active wala agar link pe click karenge to apply hoga */
+        a:active { 
+            background-color: rgb(160, 95, 149);
+        }
+        /* hover wala uspe cursor krke apply hoga */
+        a:hover{
+            background-color: green;
+        }
+        /* if p is a first child of its parent, then apply */
+        p:first-child{
+            background-color:antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <div ID="green">
+        I am a div
+        <p>I am first</p>
+        <p>I am second</p>
+
+        <p>
+            I am a para.
+        </p>
+    </div>
+    <div class="red">
+        I am another div
+        <span>
+            <p>
+                paragraph...
+            </p>
+        </span>
+    </div>
+    <div>
+        <a href="https://www.google.com">Open Google</a>
+        <a href="https://www.facebook.com">Open Facebook</a>
+        
+    </div>
+</body>
+
+</html>

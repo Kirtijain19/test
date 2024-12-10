@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms- lets learn it</title>
+</head>
+
+<body>
+    
+    
+    <form action="/submit.php" method="post">
+        <div>
+            <label for="username">Enter your username</label>
+            <input type="text" name="username" id="username" placeholder="Enter your username">
+        </div>
+       
+        <div>
+            <label for="subscribe">subscribe Kirti Jain</label>
+            <input type="checkbox" name="subscribe" id="subscribe" value="yes">
+            <label for="like">like Kirti Jain</label>
+            <input type="checkbox" name="like" id="like">
+        </div>
+        <div>
+            <label for="female">female</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="male" value="male">
+        </div>
+        <div>
+            <label for="comment">Add your comment</label>
+            <br>
+            <textarea name="comment" id="comment" cols="50" rows="10"></textarea>
+            
+        </div>
+        <div>
+            <select name="fruits" id="fruits">
+                <option value="apple">apple</option>
+                <option value="mango">mango</option>
+                <option value="grapes">grapes</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="date" name="date" id="date" value="date">
+            <label for="date">date</label>
+        </div>
+        <br>
+        <div>
+            <input type="color" name="color" id="color" value="color">
+            <label for="color">color</label>
+        </div>
+        <br>
+        <div>
+            <input type="time" name="time" id="time">
+            <label for="time">time</label>
+        </div>
+        <br>
+        <div>
+            <input type="password" name="pasword" id="pasword">
+            <label for="password">password</label>
+        </div>
+        <br>
+        <div>
+            <input type="number" name="number" id="number">
+            <label for="number">number</label>
+        </div>
+        <div>
+            <input type="button" value="right">
+            <input type="button" value="left">
+            <input type="file" name="" id="">
+            <input type="submit" value="submit">
+            <input type="search" name="" id="">
+        </div>
+    </form>
+
+    all about patterns:
+    <a href="https://www.w3schools.com/TAGS/att_input_pattern.asp">Pattern info</a>
+   
+        
+</body>
+
+</html>

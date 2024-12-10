@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods in JavaScript</title>
+</head>
+<body>
+    <script>
+        var s1 = "Welcome to Java Script 'JS'";
+        document.writeln("s1 = ", s1, "<br>");
+        document.write("Length of s1 = ", s1.length, "<br>");
+        document.write("Type of s1 = ", typeof s1, "<br>");
+
+        var s2 = new String("Welcome");
+        document.write("Index of 'l' in s2 = ", s2.indexOf('l'), "<br>");
+        document.write("Last Index of 'e' in s2 = ", s2.lastIndexOf('e'), "<br>");
+        document.write("Search 'l' in s1 = ", s1.search('l'), "<br>");
+        document.write("Replace 'Welcome' with 'Learn' in s1 = ", s1.replace("Welcome", "Learn"), "<br>");
+
+        document.write("Uppercase of s1 = ", s1.toUpperCase(), "<br>");
+        document.write("Lowercase of s1 = ", s1.toLowerCase(), "<br>");
+        document.write("Substring from index 0 to 7 of s1 = ", s1.substring(0, 7), "<br>");
+        document.write("Slice from index 8 to 15 of s1 = ", s1.slice(8, 15), "<br>");
+        document.write("Character at index 0 of s1 = ", s1.charAt(0), "<br>");
+        document.write("Character code at index 0 of s1 = ", s1.charCodeAt(0), "<br>");
+        document.write("Concatenation of s1 and s2 = ", s1.concat(" ", s2), "<br>");
+        document.write("Does s1 include 'Java'? = ", s1.includes("Java"), "<br>");
+        document.write("Does s1 start with 'Welcome'? = ", s1.startsWith("Welcome"), "<br>");
+        document.write("Does s1 end with 'JS'? = ", s1.endsWith("JS"), "<br>");
+        document.write("Trimmed version of s1 = ", s1.trim(), "<br>");
+        document.write("Repeat s2 3 times = ", s2.repeat(3), "<br>");
+        var words = s1.split(" ");
+        document.write("Split s1 into an array = ", words, "<br>");
+    </script>
+</body>
+</html>

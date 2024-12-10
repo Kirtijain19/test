@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display properties</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            border: 2px solid black;
+            display: inline-block;
+            padding: 45px;
+            margin: 34px;
+            width: 344px;
+        }
+        .box1{
+            /* display: none; */
+            /* visibility: hidden; */
+            /* display none kiya to vo box aur uska space dono gayab ho jaenge lekin visibility hidden se box gayab hoga but uska space aaega */
+            /* display: flex;
+            justify-content: center; */
+            display: grid;
+        }
+    </style>
+</head>
+<!-- padding aur margin aur border inline elements ke top par nhi lagte isliye isko inline-block kiya aur width bhi set nhi hoti -->
+<body>
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box">
+        also a nice box
+    </div>
+    <span>i am a span</span>
+    <span>nice one</span>
+</body>
+</html>

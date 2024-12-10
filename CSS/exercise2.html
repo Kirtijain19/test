@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+</head>
+<!-- <style>
+     /* specificity of pseudo selector=10 */
+     p:first-child{
+        color: red;
+        background-color: yellow;
+    }
+    /* specificity of 2 element selectors or a descendent selector=1+1=2 */
+    div p{   
+        color: white;
+        background-color: blue;
+    }
+   
+</style> -->
+<style>
+    /* specificity=10 */
+    div p:first-child{
+        color: red;
+        background-color: yellow;
+    }
+    /* specificity=1 */
+    p{
+        color: white;
+        background-color: blue;
+    }
+    /* div p:nth-child(2){
+        color: cadetblue;
+        background-color: aliceblue;
+    } */
+</style>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora praesentium earum aut illo nam, libero
+            quaerat quasi cupiditate sed cum illum dolor maiores!</p>
+        <p>I am another para</p>
+        <p>I am also another para</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora praesentium earum aut illo nam, libero
+            quaerat quasi cupiditate sed cum illum dolor maiores!</p>
+        <p>I am another para</p>
+        <p>I am also another para</p>
+    </div>
+</body>
+
+</html>

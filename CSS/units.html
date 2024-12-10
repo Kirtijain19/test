@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNITS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 14px;
+        }
+
+        .box {
+            background-color: aquamarine;
+            /* display: inline; */
+            width: 80vw;
+            margin: auto;
+            box-sizing: border-box;
+            border: 2px solid blue;
+
+        }
+
+        .container {
+            background-color: aquamarine;
+            box-sizing: border-box;
+            border: 2px solid red;
+            /* height: 80vh; */
+            min-height: 80vh;
+            /* min-height means ki content ho ya na ho min itni height to hogi hi aur agar content zyada higa to height adjust ho jaegi*/
+            width: 80vw;
+            margin: 23px auto;
+            /* font-size: 18px; */
+            /* 23 px likhne se top bottom ka margin aaya aur auto se left right ka aaya */
+        }
+        .container div{
+            font-size: 2rem;
+            /* therefore font size will be 36 px */
+            width: 50%;
+            border: 2px solid black;
+
+        }
+        .mycont{
+            color: yellow;
+            background-color: red;
+            margin: 23px auto;
+            font-size: 22px;
+            width: 100vmin;
+            /* 100 vmin means 100 vh for this device */
+        }
+        /* div>div p{ */
+        /* div>div>p{ */
+        .container>div>p{
+            font-size: 20px;
+            width: 50%;
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>
+            the units can be:
+            px, em, rem, vw, vh, vmin, vmax, min-height, min-width, %width or %height
+        </p>
+       
+        <ul type="circle">
+            <li> 80 vh means 80% of the height of view port</li>
+            <li>80 vw means 80% of the width of view port</li>
+            <li>1.5em means inherit krke jisko jitna font size milne wala tha uska 1.5 times ho jaega</li>
+            <li>1.5rem means root se jo size mila tha uska 1.5 times ho jaega</li>
+            <li>html is a root elemnt and by default font size is 16px</li>
+        </ul>
+    </div>
+    <div class="box">
+        this is a box
+    </div>
+    <div class="container">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nisi tempora fugiat praesentium amet nihil
+            repudiandae quidem quia, blanditiis non qui pariatur officia.
+            <p>
+                hello
+            </p>
+        </div>
+        
+    </div>
+    <div class="mycont">
+        I am another container
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        .box:first-child{
+            background-color:red;
+        }
+        .box::first-line{
+            color: yellow;
+        }
+        /* .boxes *{
+            color: blue;
+            border: 2px solid black;
+        } */
+        /* attribute selector */
+        /* p,a,.box,[data-color="primary"]{
+            margin-top: 45px;
+            padding-top: 10px;
+        } */
+        /* .box:nth-child(even){
+            background-color: blue;
+        } */
+        /* .box:nth-last-child(2){
+            background-color: yellow;
+        } */
+        .box::first-letter{
+            color: peru;
+           
+        }
+        .boxes::before{
+            content:"good website";
+            color: red;
+        }
+        .boxes::after{
+            content: "website completed";
+            color: blue;
+        }
+        ::selection{
+            color: aqua;
+            background-color: brown;
+        }
+        /* before and after are known as pseudo elements */
+        input::placeholder{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aliquid odio nesciunt culpa a perspiciatis iste. Repellendus quis eligendi autem animi laudantium, earum maxime natus dolore quo iure itaque facilis tenetur distinctio et cupiditate nemo atque ea magnam vitae. Nisi nobis beatae tenetur quam iusto.</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <input type="text" name="" id="" placeholder="type ypur name here">
+    </div>
+</body>
+</html>

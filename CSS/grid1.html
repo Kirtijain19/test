@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display: grid;
+            /* grid-template-columns: [pehla]120px [dusra]100px [t];
+            grid-template-rows: 100px 100px 100px; */
+            width: 80vw;
+            height: 100vh;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* grid-template-columns: repeat(3,1fr); */
+            /* grid-template-columns: repeat(3, minmax(100px, 1fr)); */
+            grid-template-columns: repeat(4,40px);
+            /* fr is a special unit for grid which symbolise 1 fraction */
+            /* gap: 34px; */
+            row-gap: 10px;
+            column-gap: 44px;
+            /* gap is used instead of padding in flexbox and grid */
+
+            /* justify-content: center;
+            align-content: center; */
+            place-content: center;
+            /* place content is sum of justify and align content */
+            /* justify content and align content tab lagega jab container bada ho aur grid choti ho */
+            
+            /* justify-items: center;
+            align-items: center; */
+            /* agar within cells adjust karna ho to justify items aur align items */
+        }
+        .item{
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;
+        }
+        /* .item4{
+            grid-row:1/2 ;
+            grid-column:pehla/t ;
+        } */
+        /* .item1{
+            grid-row:1/2 ;
+            other method:
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column:1/2 ;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item4">4</div>
+        <div class="item">5</div>
+        <p>grid line, grid cells
+            grid track: 2 grid lines ke beech ka white-space
+            grid area
+        </p>
+    </div>
+</body>
+</html>

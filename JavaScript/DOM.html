@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM</title>
+    <style>
+        .box{
+            height: 45px;
+            width: 56px;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- // DOM represents page content as HTML -->
+    <!-- // BOM represents additional objects provided by the browser for working with everything except the document. the functions alert/ confirm/ prompt  are also a part of BOM. -->
+    <!-- // Window: global object
+            - DOM
+            - BOM
+            - JavaScript Core
+    -->
+    <!-- jab bhi hum kisi page pe kisi element ko select krte h vo $0 show krta h uski help se hum usko access kaer sakte hai aur uski properties temporarily change kar sakte hai -->
+    <!-- DOM represents a document with a logical tree. each branch of tree ends in a node and each node contains objects. DOM allows systematic access to the tree with which you can change the document's structure, style or content. -->
+
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+    </div>
+    <table>
+        <caption>students data</caption>
+        <thead>
+            <tr>
+            
+            <td>name</td>
+            <td>age</td>
+            <td>class</td>
+           </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Teddy</td>
+                <td>5</td>
+                <td>3rd</td>
+
+            </tr>
+            <tr>
+                <td>Golu</td>
+                <td>7</td>
+                <td>5th</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>nice</td>
+                <td>1</td>
+                <td>1st</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    <!-- <script>
+        // DOM stands for Document Object Model 
+        document.title="Kirti is good"
+        console.log(document.title)
+        console.log(document.body)
+        document.body.style.backgroundColor="green"
+        // BOM stands for Browser Object Model
+    </script> -->
+    <!-- <script src="DOM.js"></script> -->
+</body>
+</html>

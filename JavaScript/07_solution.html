@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- // the local storage manager: you are working on a note taking app and want to implement a function named saveNoteToLocalStorage that takes a note object and saves it to the browser's local storage. -->
+     <button>Add note</button>
+    <script>
+    //     if(localStorage.getItem("name"))
+    //     {
+    //         a=localStorage.getItem("name")
+    //         document.write("Welcome " + a)
+    //     }
+    //     else{
+    //         let a = prompt("Enter your name")
+    //         localStorage.setItem("name",a)
+    //         document.write("Welcome " + a)
+    //     }
+    
+    //     //storing an object in local storage
+    //     b={
+    //         "harry":1,
+    //         "rohan":2
+    //     }
+    //     JSON.stringify(b)
+    //     localStorage.setItem("guys",JSON.stringify(b))
+    //     console.log(localStorage.getItem("guys"))    //it will give  a string
+    //     //converting the string into an object again:-
+    //     console.log(JSON.parse(localStorage.getItem("guys")))
+    //    // we can store an object only in the form of string but we can parse it into an object
+
+       //solving the question
+       function saveNoteToLocalStorage(note){
+        localStorage.setItem("note",note)
+
+       }
+
+       document.querySelector("button").addEventListener("click",()=>{
+        let note=prompt("enter your note")
+        saveNoteToLocalStorage(note)
+        document.write(note)
+       })
+    </script>
+
+</body>
+</html>

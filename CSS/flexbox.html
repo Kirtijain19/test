@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            display: flex;
+            /* dispaly flex conatiner pe lagta h items par nhi */
+            height: 80vh;
+            /* justify-content: center; */
+            align-items: center;
+            /* flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row-reverse; */
+            /* agar flex direction row h to us direction me axis ko bolenge main axis and uske perpendicular wali ko cross axis */
+            flex-wrap: wrap;
+            /* align-content: center; */
+            /* for 1 line, use align-items for multiple lines, use align-content     but     there is no justify items in flexbox*/
+            /* flex-flow: row wrap-reverse; */
+            /* flex flow me phle direction set hoti h fir wrap kaise karna h vo set hota h */
+            /* gap: 10px; */
+            /* row-gap: 10px; */
+            /* column-gap: 10px; */
+            gap: 10px 40px;
+            /* phle row wala fir column ka */
+
+        }
+        .item{
+            height: 32px;
+            width: 32px;
+            background-color: violet;
+            /* margin: 4px; */
+            border: 2px solid black;
+            /* flex-grow: 1; */
+        }
+        .order1{
+            order: 1;
+        }
+        .order2{
+            order: 2;
+        }
+        .order3{
+            order: 3;
+        }
+        /* default order is 0, jitna kam order hoga utna phle aaega itna zyada order hoga vo baad me aaega */
+        .item1{
+            /* flex-grow: 2;
+            flex-shrink: 2; */
+            align-self: flex-end;
+        }
+    </style>
+</head> 
+<body>
+    <main>
+        <div class="container">
+            <div class="item item1 order1">1</div>
+            <div class="item order2">2</div>
+            <div class="item order3">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <!-- <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div> -->
+            <!-- <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div> -->
+            <!-- <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div> -->
+            <!-- <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div> -->
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+            /* image overflow na ho jisse */
+        }
+        .card{
+            border: 2px solid red;
+        }
+        img{
+            float: left;
+        }
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- .cards>.card*3 -->
+     
+    <div class="cards">
+        <img src="https://www.yachtworld.com/research/files/2022/02/42Auroris-Hero-BG-sized.jpg" width="230px" alt="">
+        <div class="card">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quidem officiis animi sit unde deserunt beatae, sint explicabo laborum harum accusamus dignissimos repellat impedit sunt, nemo corporis molestias reprehenderit! Molestias, inventore! Sit, sapiente dicta!
+            </p>
+        </div>
+        <div class="card">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem incidunt rem dolore culpa enim sit quibusdam quia velit voluptatibus sint cupiditate nulla, cum cumque vitae! Facilis, similique. Vel fuga voluptatum facere quia veniam corrupti ullam, ducimus quaerat distinctio saepe blanditiis, consequatur architecto in perferendis dignissimos animi eligendi, dolor amet molestiae unde! Incidunt quibusdam praesentium, doloremque sit distinctio esse doloribus blanditiis molestias minus odit reiciendis? Sit optio accusamus quis numquam rem porro accusantium neque inventore natus, necessitatibus iusto magni harum commodi odio totam magnam maiores nihil aperiam pariatur aliquam dolor minima nesciunt culpa et. Impedit qui mollitia laudantium repellat, recusandae possimus autem nostrum fugit corporis eum sed ut et voluptatibus quia ipsam sit quae earum laboriosam ad iure voluptatum pariatur dolorem. Molestiae, soluta at voluptatibus cumque sunt excepturi suscipit, odit ipsum, consequuntur tenetur porro laborum magni distinctio rem odio iusto. Corrupti repudiandae, voluptate, sapiente eaque, doloremque praesentium dolor id veniam dignissimos magni dolores possimus quisquam recusandae similique magnam quia. Quod facere ducimus cupiditate, aperiam veniam aut incidunt dolores? Sapiente adipisci laudantium quo temporibus sequi rerum iure eaque nam, corrupti non. Sint nobis optio, officiis consequatur totam excepturi cum nihil illum amet adipisci voluptas delectus quia molestias! Officia obcaecati repellendus fugit laboriosam, facere minima voluptates pariatur? Dolorem quod recusandae in. Voluptate ipsam dolorum fugiat incidunt, voluptas id eos sunt officia tempora placeat voluptatum nisi, commodi totam veritatis quod cum illo voluptates facere. Doloremque harum ut possimus tenetur distinctio sequi assumenda, explicabo, odio ad in similique soluta enim amet vel perferendis necessitatibus voluptatem facilis sed nisi maiores! Id quaerat suscipit dolores ratione quasi sapiente reiciendis delectus, eveniet quidem corrupti vel praesentium omnis error laudantium et consectetur nihil fugit quis necessitatibus eaque eum ea accusamus maxime blanditiis? Expedita vitae veniam, perspiciatis unde voluptas rem tempora corrupti totam, facilis recusandae explicabo culpa earum? Doloremque magnam placeat similique voluptates corrupti error quisquam, amet, cumque tempore pariatur, quis natus. Voluptas non exercitationem perferendis, nemo inventore laboriosam ab reiciendis praesentium quasi illum blanditiis totam esse aspernatur est. Quam aspernatur maxime eius!
+            </p>
+        </div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>

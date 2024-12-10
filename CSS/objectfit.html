@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS object fit and position</title>
+    <style>
+        .container{
+            /* background-color:cadetblue; */
+            background-image: url(image.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-clip:border-box ;
+
+            height: 466px;
+            width: 488px;
+            border: 2px solid black;
+        }
+        img{
+            width: 466px;
+            height: 488px;
+            /* object-fit: cover; */
+            object-position: 10px 20px;
+            /* object-position: bottom right; */
+            /* cover se given area cover hoga aur image cut hogi */
+
+            /* object-fit: contain; */
+            /* contain se image puri aaegi aur area me se jgh bachegi */
+
+            /* object-fit: fill; */
+            /* by default h ye full image dikhegi but distorted hogi */
+
+            /* object-fit: scale-down; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="image.jpg" alt=""> -->
+
+    </div>
+</body>
+</html>

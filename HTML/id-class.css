@@ -1,0 +1,19 @@
+.red
+{
+    color: rgb(170, 192, 193);
+}
+.bg-yellow
+{
+    background-color: rgb(149, 65, 65);
+}
+#seconddiv
+{
+    background-color: aqua;
+}
+#firstdiv
+{
+    background-color: blueviolet;
+}
+p{
+    background-color: bisque;
+}
